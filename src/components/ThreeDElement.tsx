@@ -34,11 +34,19 @@ const ThreeDElement: React.FC<ThreeDElementProps> = ({
       const rotateX = (y - centerY) / 20;
       const rotateY = (centerX - x) / 20;
       
-      element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      // Apply the transformation to a wrapper element inside the main container
+      // so the content remains stable
+      const wrapper = element.querySelector('.three-d-content-wrapper') as HTMLElement;
+      if (wrapper) {
+        wrapper.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      }
     };
     
     const handleMouseLeave = () => {
-      element.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+      const wrapper = element.querySelector('.three-d-content-wrapper') as HTMLElement;
+      if (wrapper) {
+        wrapper.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+      }
     };
     
     element.addEventListener('mousemove', handleMouseMove);
@@ -65,7 +73,9 @@ const ThreeDElement: React.FC<ThreeDElementProps> = ({
         className
       )}
     >
-      {children}
+      <div className="three-d-content-wrapper transition-transform duration-200 ease-out">
+        {children}
+      </div>
     </div>
   );
 };
