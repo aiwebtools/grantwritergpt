@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
           
           {/* 3D Card/Visual */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <ThreeDElement className="glass-morphism rounded-xl p-6 max-w-md w-full animate-float">
+            <ThreeDElement className="glass-morphism rounded-xl p-6 max-w-md w-full">
               <div className="flex items-start mb-4">
                 <div className="bg-cyber-blue/20 p-3 rounded-lg">
                   <FileText className="w-6 h-6 text-cyber-blue" />
