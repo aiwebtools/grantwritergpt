@@ -9,7 +9,7 @@ import FAQSection from '@/components/FAQSection';
 import DisclaimerSection from '@/components/DisclaimerSection';
 import ConsentModal from '@/components/ConsentModal';
 import CTAButton from '@/components/CTAButton';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Info } from 'lucide-react';
 
 const Index = () => {
   const [showConsent, setShowConsent] = useState(true);
@@ -34,6 +34,18 @@ const Index = () => {
     <div className="min-h-screen bg-cyber-dark relative">
       {/* Fixed background with grid effect */}
       <div className="fixed inset-0 bg-cyberpunk-grid opacity-10 pointer-events-none"></div>
+      
+      {/* Small Disclaimer Notice */}
+      <div className="bg-cyber-blue/10 border-b border-cyber-blue/20 py-2">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center text-center">
+            <Info className="w-4 h-4 text-cyber-blue mr-2 flex-shrink-0" />
+            <p className="text-xs text-white/70">
+              This tool is provided for informational, educational, and research purposes only. Professional review recommended before submission.
+            </p>
+          </div>
+        </div>
+      </div>
       
       <Header />
       
