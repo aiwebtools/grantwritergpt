@@ -142,3 +142,6 @@ const Index = () => {
       {showConsent && !hasAccepted && <ConsentModal onAccept={handleConsentAccept} />}
     </div>
   );
+};
+
+export default Index;
