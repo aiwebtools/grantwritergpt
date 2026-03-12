@@ -115,7 +115,7 @@ const Header: React.FC = () => {
             Disclaimer
           </a>
           <CTAButton 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="ml-4"
