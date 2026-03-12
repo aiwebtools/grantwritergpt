@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-cyber-blue/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © 2025 <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-cyber-blue">AI WEB TOOLS LLC</a> All rights reserved.
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-cyber-blue">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           
           <CTAButton 
