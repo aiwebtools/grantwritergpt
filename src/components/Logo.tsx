@@ -15,7 +15,7 @@ const Logo: React.FC<LogoProps> = ({ className = '' }) => {
           Grant Writer GPT
         </span>
         <span className="text-xs text-muted-foreground font-normal leading-tight">
-          Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-cyber-blue transition-colors">AiWebTools.Ai</a>
+          Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-cyber-blue transition-colors">AiWebTools.Ai</a>
         </span>
       </div>
     </div>
